@@ -6,7 +6,7 @@ sketch.setup() {
 };
 
 sketch.draw() {
-	tetrisShape();
+	sketch.tetrisShape();
 };
 
 sketch.tetrisShape() {
