@@ -1,13 +1,15 @@
-function setup() {
+var s = function(sketch) {
+    
+sketch.setup() {
   createCanvas(windowWidth, windowHeight);
   background(0);
-}
+};
 
-function draw() {
+sketch.draw() {
 	tetrisShape();
-}
+};
 
-function tetrisShape() {
+sketch.tetrisShape() {
 		for (var x = 0; x < width; x += 40){
 			for (var y = 0; y < height; y += 40){
 				fill(255-(x/10), 197-(y/2), y+3, x-3);
@@ -21,4 +23,6 @@ function tetrisShape() {
 				endShape();
 			}
 		}
-}
+};
+};
+var myp5 = new p5(s);
